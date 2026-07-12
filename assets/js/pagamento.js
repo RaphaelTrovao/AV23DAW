@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
     }
 
-    fetch("db/bd.json")
+    fetch("db/bdCarros.json")
     .then(resposta => resposta.json())
     .then(dados => {
 

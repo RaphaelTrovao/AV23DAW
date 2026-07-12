@@ -33,7 +33,7 @@ function renderCar(){
 function selectCar(idc){
     sessionStorage.setItem('veiculoSelc', idc);
 
-    window.location.href = 'pgPagamento.html';
+    window.location.href = 'dadosVeiculo.html';
 }   
 
 document.addEventListener("DOMContentLoaded", renderCar);

@@ -1,13 +1,12 @@
 <?php
 header('Content-Type: application/json; charset=utf-8');
+require_once 'api_banco.php';
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 if($_SERVER["REQUEST_METHOD"] == "POST"){
 $idC = $_POST['id'];
-$path = "../db/bd.json";
-$h = file_get_contents($path);
-$dc = json_decode($h, true);
+$dc = abrirBD();
 
 $arteste = [];
 

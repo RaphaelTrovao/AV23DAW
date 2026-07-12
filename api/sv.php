@@ -1,5 +1,5 @@
 <?php
-       //header('Content-Type: application/json; charset=utf-8');
+       header('Content-Type: application/json; charset=utf-8');
        /*$arteste = [];
        $path = "bd.json"; 
             $h = file_get_contents($path);
@@ -25,10 +25,14 @@
                 */
             http_response_code(200);
             echo json_encode([
-                'status' => 'sucesso'
+                "status" => 'sucesso'
             ]);
         
-           
+           exit;
         }
-        
+        echo json_encode([
+            "dataR" => $_SESSION['bdatret'],
+                "dataE" => $_SESSION['bdatent']
+        ]);
+        exit;
 ?>

@@ -1,14 +1,14 @@
 <?php
+require_once 'api_banco.php';
 header('Content-Type: application/json; charset=utf-8');
+
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
 $loc = $_SESSION['bloc'];
 $datRet = $_SESSION['bdatret'];
 $datEnt = $_SESSION['bdatent'];
-$path = "../db/bd.json";
-$h = file_get_contents($path);
-$dc = json_decode($h, true);
+$dc = abrirBD();
 
 $arteste = [];
 if($loc !== ''){
