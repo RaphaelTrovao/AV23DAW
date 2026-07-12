@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <form action="admsv.php" method="POST" enctype="multipart/form-data">
+            <p>Insira o nome do veículo:</p>
+            <input type="text" name="nomeVeiculo">
+            <br><br>
+            <p>Insira a foto do veículo: </p>
+            <input type="file" name="imagem">
+            <br><br>
+            <p>Insira a capacidade de pessoas:</p>
+            <input type="text" name="capacidade">
+            <br><br>
+            <p>Selecione a disponibilidade do ar-condicionado: </p>
+            <input type="radio" name="ar" value="true"> Com ar-condicionado
+            <input type="radio" name="ar" value="false"> Sem ar-condicionado
+            <br><br>
+            <p>Selecione a disponibilidade da mala: </p>
+            <input type="radio" name="mala" value="true"> Com mala
+            <input type="radio" name="mala" value="false"> Sem mala
+            <br><br>
+            <p>Selecione o tipo do veículo: </p>
+            <input type="radio" name="tipo" value="manual"> Manual
+            <input type="radio" name="tipo" value="automatico"> Automático
+            <br><br>
+            <p>Insira o valor da diária:<p>
+            <input type="text" name="diaria">
+            <br><br>
+            <p>Insira o local de disponibilidade: </p>
+            <input type="text" name="localDisp">
+            <br><br>
+            <p>Insira a data de retirada disponível: </p>
+            <input type="date" name="dataDispoP">
+            <br><br>
+            <p>Insira a data de entrega disponível: </p>
+            <input type="date" name="dataDispoF">
+            <br><br>
+            <button value="submit">enviar</button>
+            
+        </form>
+    </body>
+</html>

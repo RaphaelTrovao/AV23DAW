@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+         <meta charset="UTF-8">
+        <title>FallsCars</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+         <div class="layout">
+        <aside class="frSide">
+             <form id="frCar" class="frS" method="post">
+                <input class="textLocalS sideB" type="text" required>
+                <input class="textData sideB" type="date" required>
+                <input class="textData sideB" type="date" required>
+                <input class="btEnS" type="submit">
+            </form>
+            <div class="dd">
+                <button onclick="drop()" class="dpB">Filtros</button>
+                <div id="dID" class="dropdown">
+
+                </div>
+                <div class="dd">
+                
+                </div>
+
+            </div>
+        </aside>
+        <section>
+           <div id="carDivs" class="carSection">
+            <div class="carBox">
+                <p>Carregando Veículos...</p>
+            </div>
+           </div> 
+        </section>
+        <script src="assets/js/cars.js"></script>
+    </body>
+</html>

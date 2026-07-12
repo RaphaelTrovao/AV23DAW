@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>FallsCars</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <header></header>
+        <section class="carrousel">
+        </section>
+        <section class="frIn">
+            <form action="" id="frCar" class="fr" method="POST">
+                <input class="textLocal" type="text" name="local" required>
+                <input class="textData" type="date" name="dataRet" required>
+                <input class="textData" type="date" name="dataEnt" required>
+                <input class="btEn" type="submit">
+            </form>
+        </section>
+        <script>
+    document.getElementById("frCar").addEventListener("submit", function(event) {
+  event.preventDefault(); // Prevents the form from submitting traditionally
+
+      const xhr = new XMLHttpRequest();
+
+      xhr.open('POST', 'api/sv.php', true);
+      xhr.onload = function(){
+        if(xhr.status >= 200 && xhr.status < 300){
+          const data = JSON.parse(xhr.responseText);
+        } else {
+          console.error(xhr.status);
+        }
+      };
+      
+
+  const formData = new FormData(this);
+  xhr.send(formData);
+  window.location.href = "select.html";
+    });
+  
+ 
+</script>
+    </body>
+</html>

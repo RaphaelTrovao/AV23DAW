@@ -1,0 +1,44 @@
+[
+    {
+        "id": "1",
+        "local": "aaa",
+        "veiculo": "cara",
+        "imagem": "assets\/img\/car1.png",
+        "capacidade": "4",
+        "ar-condicionado": "true",
+        "mala": "true",
+        "tipo": "manual",
+        "diaria": "50",
+        "data disponivel inicial": "2222-01-01",
+        "data disponivel final": "2222-02-02",
+        "status": "disponivel"
+    },
+    {
+        "id": 2,
+        "local": "rr",
+        "veiculo": "teee",
+        "imagem": "assets\/img\/car1.png",
+        "capacidade": "4",
+        "ar-condicionado": "true",
+        "mala": "true",
+        "tipo": "automatico",
+        "diaria": "12",
+        "data disponivel inicial": "2222-02-02",
+        "data disponivel final": "3333-03-03",
+        "status": "disponivel"
+    },
+    {
+        "id": 3,
+        "local": "rr",
+        "veiculo": "teee",
+        "imagem": "assets\/img\/car1.png",
+        "capacidade": "4",
+        "ar-condicionado": "false",
+        "mala": "true",
+        "tipo": "automatico",
+        "diaria": "12",
+        "data disponivel inicial": "2222-02-02",
+        "data disponivel final": "3333-03-03",
+        "status": "indisponivel"
+    }
+]
